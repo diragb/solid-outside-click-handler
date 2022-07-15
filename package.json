@@ -1,0 +1,55 @@
+{
+  "name": "solid-outside-click-handler",
+  "version": "0.1.0",
+  "description": "Detect and handle clicks outside a Solid component.",
+  "main": "dist/index/index.common.js",
+  "module": "dist/index/index.module.js",
+  "types": "dist/index/index.d.ts",
+  "author": "Dirag Biswas (https://github.com/diragb)",
+  "funding": {
+    "type": "individual",
+    "url": "https://github.com/sponsors/diragb"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/diragb/solid-outside-click-handler"
+  },
+  "bugs": {
+    "url": "https://github.com/diragb/solid-outside-click-handler/issues"
+  },
+  "homepage": "https://github.com/diragb/solid-outside-click-handler#readme",
+  "scripts": {
+    "build": "rollup -c rollup.config.js"
+  },
+  "peerDependencies": {
+    "solid-js": "^1.4.7"
+  },
+  "devDependencies": {
+    "esbuild-plugin-solid": "^0.4.2",
+    "rollup": "^2.76.0",
+    "rollup-preset-solid": "^1.4.0",
+    "typescript": "^4.7.4"
+  },
+  "exports": {
+    ".": {
+      "solid": "./dist/index/index.jsx",
+      "import": "./dist/index/index.module.js",
+      "browser": "./dist/index/index.module.js",
+      "require": "./dist/index/index.common.js",
+      "node": "./dist/index/index.common.js"
+    }
+  },
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "detect",
+    "outside",
+    "click",
+    "solid",
+    "ui",
+    "typescript"
+  ],
+  "license": "MIT"
+}
