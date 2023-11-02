@@ -9,7 +9,6 @@ import {
 
 // Functions:
 export const useOutsideClickHandler = (ref: any, onOutsideClick: () => void) => {
-  console.log(ref, onOutsideClick)
   // Functions:
   const handleClickOutside = (event: MouseEvent) => {
     if (ref && !ref.contains(event.target)) onOutsideClick()
